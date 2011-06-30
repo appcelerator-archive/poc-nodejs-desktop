@@ -1,0 +1,18 @@
+<table id="repolist">
+ 	<tr>
+ 		<th>Name</th>
+ 		<th>Desc</th>
+ 		<th>Forks</th>
+ 		<th>Watchers</th>
+ 	</tr>
+
+ 	<% for(var i=0; i<repos.length; i++) { %>
+ 		<% var rowClass = (i % 2) ? 'alternate' : ''; %>
+        <tr class="<%= rowClass %>">
+ 			<td><a class="repo repolist-link" href="<%= repos[i].url %>"><%= repos[i].name %></a></td>
+			<td><%= repos[i].description %></td>
+			<td class="centerit"><%= repos[i].forks %></td>
+			<td class="centerit"><a class="watchercount repolist-link" rel="<%= repos[i].name %>" href="#"><%= repos[i].watchers %></a></td>
+ 		</tr>
+    <% } %>
+ </table>

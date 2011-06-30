@@ -1,0 +1,17 @@
+body{background-color:white;font-size:12px;}
+h1,h2{color:#1D1D1D;}
+h1{font-size:28px;margin:20px 0 0 10px;text-decoration:underline;}
+a:link,
+a:visited{color:#9A0707;}
+#repositories-wrapper{width:95%;margin:0 auto;padding-top:20px;}
+#repositories-wrapper h2{font-size:18px;margin-bottom:10px;}
+#repolist{width:100%;border:thin black solid;border-collapse:collapse;}
+#repolist tr.alternate{background-color:#BBBBBB}
+#repolist th{background-color:black;color:white;}
+#repolist td{border:thin black solid;padding:10px;}
+#repolist td.centerit{text-align:center;}
+#info-box{position:absolute;top:10px;right:15px;text-align:center;background-image:url('../images/appcelerator.png');background-position:center center;background-repeat:no-repeat;height:60px;width:100px;}
+#info-box a{position:relative;top:60px;text-align:center;}
+#general-content-overlay table td{font-size:12px;}
+#general-content-overlay ul{padding-bottom:10px;}
+.gravatar{float:right;}

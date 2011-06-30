@@ -1,0 +1,35 @@
+<img class="gravatar" src="https://secure.gravatar.com/avatar/<%= gravatar_id %>" alt="avatar">
+<table>
+    <tr>
+        <td style="width: 120px;">Username</td>
+        <td><%= login %></td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td><%= name %></td>
+    </tr>
+    <tr>
+        <td>Location</td>
+        <td><%= location %></td>
+    </tr>
+    <tr>
+        <td>Company</td>
+        <td><%= company %></td>
+    </tr>
+    <tr>
+        <td>Blog</td>
+        <td><a class="blog-link" href="<%= blog %>"><%= blog %></a></td>
+    </tr>
+    <tr>
+        <td>Public Repo Count</td>
+        <td><%= public_repo_count %></td>
+    </tr>
+    <tr>
+        <td>Follower Count</td>
+        <td><%= followers_count %></td>
+    </tr>
+    <tr>
+        <td>Following Count</td>
+        <td><%= following_count %></td>
+    </tr>
+</table>

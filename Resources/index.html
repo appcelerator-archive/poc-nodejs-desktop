@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Titanium Desktop NodeJS Prototype</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8"/>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/black-tie/jquery-ui.css" type="text/css" charset="utf-8"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" charset="utf-8"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js" charset="utf-8"></script>
+		<script src="ejs/ejs_production.js" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript"></script>
+		<script>
+		    Titanium.include("nodejs/nodejs.py");
+		    var njs = TiNodeJS();
+		    njs.startup(function(){
+		    	fetchRepoList();
+		    });
+		    
+		    //Shutdown node when the app exits
+			Titanium.API.addEventListener(Titanium.EXIT, function(e) {
+				njs.shutdown();
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Appcelerator on Github</h1>
+		
+		<div id="info-box">
+			<a id="fetch-followers" href="#">Github followers</a>
+		</div>
+		
+		<div id="repositories-wrapper">
+			<h2>Repository List</h2>
+			<div id="repositories"></div>
+		</div>
+		
+		<div id="general-content-overlay" title=""></div>
+	</body>
+</html>
