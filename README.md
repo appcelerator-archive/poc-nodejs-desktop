@@ -12,6 +12,7 @@ CSS, Python, Ruby, and PHP.
 
 ### Additional Notes
 nodejs-desktop-prototype makes use of:
+
 * [node](http://nodejs.org/) and the [node-github module](https://github.com/ajaxorg/node-github)
 * [EJS](http://embeddedjs.com/)
 * [jQuery](http://jquery.com/) and [jQuery UI](http://jqueryui.com/)
