@@ -2,11 +2,16 @@ import os, subprocess, time
 
 class TiNodeJS:
     def __init__(self):
+        self.platform = Titanium.getPlatform()
+        if self.platform == 'win':
+            alert('Sorry the Windows platform is not supported yet!');
+            return
+        
         self.nodepid = None
         self.nodeproc = None
         self.sep = Titanium.Filesystem.getSeparator()
         self.noderoot = Titanium.App.getHome() + self.sep + 'Resources' + self.sep + 'nodejs'
-        self.nodebinary = self.noderoot + self.sep + 'builds' + self.sep + Titanium.getPlatform() + self.sep + 'node' + self.sep + 'bin' + self.sep + 'node'
+        self.nodebinary = self.noderoot + self.sep + 'builds' + self.sep + self.platform + self.sep + 'node' + self.sep + 'bin' + self.sep + 'node'
         self.pathtoappserver = Titanium.App.getHome() + self.sep + 'Resources' + self.sep + 'appserver.js'
     
     def startup(self, callback):
