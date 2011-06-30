@@ -1,0 +1,9 @@
+version=0.4.9
+prefix=/home/chad/local/node
+libdir=${prefix}/lib
+includedir=${prefix}/include/node
+
+Name: nodejs
+Description: Evented I/O for V8 JavaScript.
+Version: ${version}
+Cflags: -I${includedir}

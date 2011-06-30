@@ -4,8 +4,7 @@ Please see the LICENSE included with this distribution for details.
 
 # nodejs-desktop-prototype README #
 
-nodejs-desktop-prototype is a prototype application built using 
-the [Appcelerator Titanium Desktop](http://www.appcelerator.com/products/titanium-desktop-application-development/).  A free and open source application development platform that lets you create native desktop application experiences using existing web skills like Javascript, HTML, 
+nodejs-desktop-prototype is a prototype application that demonstates packaging and running a local Node.js server with Titanium Desktop applications.  [Appcelerator Titanium Desktop](http://www.appcelerator.com/products/titanium-desktop-application-development/) is a free and open source application development platform that lets you create native desktop application experiences using existing web skills like Javascript, HTML, 
 CSS, Python, Ruby, and PHP.
 
 ![nodejs-desktop-prototype screenshot](http://developer.appcelerator.com.s3.amazonaws.com/documentation-examples/nodejs-desktop-prototype.png)
@@ -18,3 +17,8 @@ nodejs-desktop-prototype makes use of:
 * [jQuery](http://jquery.com/) and [jQuery UI](http://jqueryui.com/)
 
 Special thanks to goes out to these great projects.
+
+### Background
+* This is a prototype (POC if you will)
+* Windows does not work yet due to limitations with Node.js on Windows
+* This has been tested with OSX (Snow Leopard) & Ubuntu 10.10.
